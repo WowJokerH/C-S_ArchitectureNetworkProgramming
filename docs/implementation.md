@@ -234,7 +234,7 @@ void ClientWindow::handleStatusChanged(const QString &status) {
 ```cpp
 // 示例：如果未来添加配置文件支持
 // QSettings settings("config.ini", QSettings::IniFormat);
-// int port = settings.value("server/port", 8888).toInt();
+// int port = settings.value("server/port", 8080).toInt();
 ```
 
 ## 5. 测试与验证（实际工具）
@@ -288,7 +288,7 @@ Test 10 (Valid packet): Server accepted and responded (34 bytes) ✓
 ### 5.3 集成测试
 
 **手动测试流程**：
-1. 启动服务器（默认端口8888）
+1. 启动服务器（默认端口8080）
 2. 运行 `python test_invalid_packets.py` 验证协议健壮性
 3. 启动客户端，测试连接/断开/重连
 4. 测试服务器停止按钮功能（应断开所有连接）
