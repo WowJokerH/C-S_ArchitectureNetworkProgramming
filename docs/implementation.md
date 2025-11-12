@@ -219,7 +219,7 @@ void ClientWindow::handleStatusChanged(const QString &status) {
 当前版本采用**硬编码默认值**，未实现外部配置文件。
 
 **默认参数**：
-- 服务器端口：8888
+- 服务器端口：8080
 - 自动发送间隔：1000ms
 - 日志级别：所有级别启用
 - 协议版本：0x01
